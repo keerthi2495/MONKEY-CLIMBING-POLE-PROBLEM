@@ -1,0 +1,14 @@
+def result(x, y, z):
+    minute = 0
+    height = 0
+    while height < x:
+        minute += 1
+        if minute % 2 == 0:
+            height -= z
+        else:
+            height += y
+    return minute
+
+
+print(result(21, 5, 3))  # Example 1
+print(result(30, 10, 5)) # Example 2
